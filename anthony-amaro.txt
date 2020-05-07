@@ -1,0 +1,142 @@
+https://codepen.io/amaro151/pen/jOPPjqW?editors=1100
+
+
+ 1. What is Semantic HTML? 
+    2. What is HTML used for? 
+      is the skeleton of the web
+
+    3. What is an attribute and where do we put it? 
+      attributes provide addicional information about an element
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+      the h1 tag is use most of the time for title or the header and you should use it only once or twice
+
+    5. Name two tags that have required attributes
+      <a> tags and <link> tags
+
+    6. What do we put in the head of our HTML document? 
+      <title> and <link> tags
+
+    7. What is an id? 
+      an id attribute specifies a unique id element, value must be unique within the HTML document
+
+    8. What elements can I add an id to? 
+      anything but spaces
+
+    9. How many times can I use the same id on a page? 
+      one time
+
+    10. What is a class? 
+      a class specifies one or more class names for an HTML element
+
+    11. What elements can I add a class to? 
+      anything but spaces, if you add a space then you are adding another class
+
+    12. How many times can I use the same class on a page? 
+      as many times as you needs
+
+    13. How do I get my link to open in a new tab?
+      with the target attribute target="_blank"
+
+    14. What is the alt attribute used for? 
+      for screen readers or if there is an error with the image and it doesn't load 
+
+    15. How do I reference an id?
+      with #
+
+    16. What is the difference between a section and a div
+      the section tag defines sections in a document and the div tag is used to group elements and target them in css easily
+
+    17. What is CSS used for? 
+      for styling the web
+
+    18. How to we select an element? Example - every h2 on the page
+      h2 {}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+      if you find yourself repeating css a lot of css it might be a good idea to create certain classes for multiple elements with the same styling, and you might want to use and id when there is something important that you don't want to overwrite
+
+    20. How do we select classes in CSS?
+      with a dot .
+
+    21. How do we select a p element with a single class of “human””?
+      .human
+
+    22. What is a parent child selector? When would this be useful? 
+      child selector is used to match all the elements which are child of a specified element. it would be useful if you have a <section> an a paragraph in it you can write it section p
+
+    23. How do you select all links within a div with the class of sidebar?
+      .sidebar a {}
+
+    24. What is a pseudo selector?
+       a pseudo selector selects elements that are in  a specific state, they tend to act as if you had applied a class to some part of your document, ofthen helping you cut down on the exess classses in your markup
+
+    25. What do we use the change the spacing between lines?
+      line-heigth
+
+    26. What do we use to change the spacing between letters?
+      letter-spacing
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+      text-transform: capitalize
+
+    28. How do I add a 1px border around my div that is dotted and black?
+      border: 1px dotted black;
+
+    29. How do I select everything on the page? 
+      with the * selector
+
+    30. How do I write a comment in CSS?
+      /* */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+      pwd or ls
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+      ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+      rm <file> and you have to becareful because if you delete there is no way getting that file back
+
+    34. Why should I use version control? 
+      in case you delete a file from your computer or you are working on a project and don't save the code editor febore saving the files you can get them back from 
+    35. How often should I commit to github?
+      whenever we make a change or every 20 minutes
+
+    36. What is the command we would use to push our repo up to github? 
+      git push origin 'branch-name'
+
+    37. Walk me through Lambda's git flow. 
+      1. we need to fork the project
+      2. we need to add our TL as a collaborator
+      3. we need to clone the project
+      4. on the terminal cd into the folder you want and then type git clone <url>
+      5. cd into the folder 
+      6. create a new branch  git checkout -b 'anthony-amaro'
+      7. add your files add . , then commit , git commit -m "message" , git push origin anthony-amaro
+      8. click the button with compare & pull request, use your fork as a base and add your TL as a reviewer, add message to let them know you submmited your project
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+      by default inline elements do not force a new line to being in the document flow. block elements on the other hand typically cause a line break to occur
+
+    2. What happens when an element is positioned absolutely? 
+      it goes on top on the other elements
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+      display: inline-block;
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+      elements that are display block
+          h1, p, div
+      elements that are display inline
+         span, input
+      elements that are display-block
+         img
+    5. In your own words, explain the box model. What is the fix for the box model? 
+      is basically a box that wraps all the HTML and from there you can add padding, margin and borders to all sizes
+      first is the actual content, then padding then border and last margin. padding is in the innner margin is in the outer.
+         the fix for the box model is
+         * {
+            box-sizing: border-box;
+         }
+
